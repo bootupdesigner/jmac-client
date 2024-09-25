@@ -2,6 +2,13 @@
   "expo": {
     "name": "jmac",
     "slug": "jmac",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "scheme": "jmac-cleaning-services",
+    "web": {
+    "bundler": "metro"
+  },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
