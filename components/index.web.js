@@ -1,7 +1,9 @@
-import { StyleSheet, Text, View, SafeAreaView, ScrollView, StatusBar, Platform } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView,  StatusBar, Platform } from "react-native";
 import Head from 'expo-router/head';
-import Header from "../components/Header";
-import CommercialServices from "../components/CommercialServices";
+import Header from "./Header";
+import CommercialServices from "./CommercialServices";
+import { ScrollView } from "react-native-web";
+
 
 
 const services = [

@@ -1,6 +1,6 @@
-import { Button, Image, Linking, StyleSheet, Text, View } from 'react-native'
+import {  Image, Linking, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Logo from '../images/online-logo.png';
+import Logo from '../assets/images/online-logo.png';
 import Feather from '@expo/vector-icons/Feather';
 
 const Header = () => {
