@@ -40,11 +40,7 @@ const Header = () => {
                 </View>
             </View>
 
-            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', }}>
-                <Image alt='JMAC Cleaning Services logo' source={Logo}
-                    style={{ width: 200, height: 113 }} />
-
-            </View>
+          
 
         </View>
 
