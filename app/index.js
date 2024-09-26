@@ -1,9 +1,8 @@
-import { Image,StyleSheet, Text, View, SafeAreaView, ScrollView, StatusBar, Platform } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, ScrollView, StatusBar, Platform } from "react-native";
 import Head from 'expo-router/head';
-import Header from "../components/Header";
-import CommercialServices from "../components/CommercialServices";
+import Header from "../assets/components/Header";
+import CommercialServices from "../assets/components/CommercialServices";
 import { tasks, services } from "../assets/data";
-import Logo from '../assets/images/online-logo.png';
 
 export default function Page() {
   return (
@@ -16,13 +15,9 @@ export default function Page() {
         <StatusBar
           backgroundColor={'white'} />
         <ScrollView
-          stickyHeaderIndices={[0]} showsVerticalScrollIndicator={false} >
+          showsVerticalScrollIndicator={false} >
           <Header />
-          <View style={{  alignItems: 'center', }}>
-                <Image alt='JMAC Cleaning Services logo' source={Logo}
-                    style={{ width: 200, height: 113 }} />
 
-            </View>
           <View style={{ paddingHorizontal: 10, }}>
             <Text style={styles.h1}>Commercial Cleaning Services</Text>
 

@@ -1,6 +1,6 @@
-import {  Image, Linking, StyleSheet, Text, View } from 'react-native'
+import { Image, Linking, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Logo from '../assets/images/online-logo.png';
+import Logo from '../images/online-logo.png';
 import Feather from '@expo/vector-icons/Feather';
 
 const Header = () => {
@@ -40,7 +40,11 @@ const Header = () => {
                 </View>
             </View>
 
-          
+            <View style={{ alignItems: 'center', }}>
+                <Image alt='JMAC Cleaning Services logo' source={Logo}
+                    style={{ width: 200, height: 113 }} />
+
+            </View>
 
         </View>
 
