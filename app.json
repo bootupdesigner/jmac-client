@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "jmac",
+    "short_name": "JMAC",
+    "name": "JMAC Cleaning Services",
     "slug": "jmac",
     "version": "1.0.0",
     "scheme": "jmac-cleaning-services",

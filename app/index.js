@@ -3,6 +3,7 @@ import Head from 'expo-router/head';
 import Header from "../assets/components/Header";
 import CommercialServices from "../assets/components/CommercialServices";
 import { tasks, services } from "../assets/data";
+import Feather from '@expo/vector-icons/Feather';
 
 export default function Page() {
   return (
@@ -15,7 +16,40 @@ export default function Page() {
         <StatusBar
           backgroundColor={'white'} />
         <ScrollView
-          showsVerticalScrollIndicator={false} >
+          showsVerticalScrollIndicator={false} stickyHeaderIndices={[0]} >
+             <View style={{
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+                padding: 10,
+                backgroundColor: 'black',
+            }}>
+
+                <View style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                }}>
+                    <Feather name="phone-call" size={16} color="white" />
+                    <Text
+                        style={{
+
+                            paddingHorizontal: 5, color: 'white', fontWeight: 'bold', fontSize: 16
+                        }}
+                        onPress={() => Linking.openURL("tel:+13057937944")}>Call</Text>
+                </View>
+
+                <View style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                }}>
+                    <Feather name="mail" size={16} color="white" />
+                    <Text
+                        style={{
+                            paddingHorizontal: 5, color: 'white', fontWeight: 'bold', fontSize: 16
+                        }}
+                        onPress={() => Linking.openURL("mailto:jmaccleaningservices@gmail.com")}>Email</Text>
+                </View>
+            </View>
           <Header />
 
           <View style={{ paddingHorizontal: 10, }}>
