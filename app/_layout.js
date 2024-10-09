@@ -1,3 +1,4 @@
+import { StyleSheet } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 import { Tabs } from 'expo-router';
@@ -24,3 +25,14 @@ export default function Layout() {
     </Tabs>
   );
 }
+
+
+const styles = StyleSheet.create({
+  tabBar: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: 60, // Adjust the height as necessary
+  },
+});

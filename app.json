@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "scheme": "jmac-cleaning-services",
     "web": {
+      "favicon":"./assets/images/online-logo.png",
     "bundler": "metro"
   },
     "plugins": [
