@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View, SafeAreaView, ScrollView, StatusBar, Platform } from "react-native";
 import Head from 'expo-router/head';
 import Header from "../assets/components/Header";
-import CommercialServices from "../assets/components/CommercialServices";
+import Tasks from "../assets/components/Tasks";
 import { tasks, services } from "../assets/data";
-import Feather from '@expo/vector-icons/Feather';
+import ContactHeader from "../assets/components/ContactHeader";
+import Services from "../assets/components/Services";
 
 export default function Page() {
   return (
@@ -17,39 +18,9 @@ export default function Page() {
           backgroundColor={'white'} />
         <ScrollView
           showsVerticalScrollIndicator={false} stickyHeaderIndices={[0]} >
-             <View style={{
-                flexDirection: 'row',
-                justifyContent: 'space-around',
-                alignItems: 'center',
-                padding: 10,
-                backgroundColor: 'black',
-            }}>
+           
+           <ContactHeader/>
 
-                <View style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                }}>
-                    <Feather name="phone-call" size={16} color="white" />
-                    <Text
-                        style={{
-
-                            paddingHorizontal: 5, color: 'white', fontWeight: 'bold', fontSize: 16
-                        }}
-                        onPress={() => Linking.openURL("tel:+13057937944")}>Call</Text>
-                </View>
-
-                <View style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                }}>
-                    <Feather name="mail" size={16} color="white" />
-                    <Text
-                        style={{
-                            paddingHorizontal: 5, color: 'white', fontWeight: 'bold', fontSize: 16
-                        }}
-                        onPress={() => Linking.openURL("mailto:jmaccleaningservices@gmail.com")}>Email</Text>
-                </View>
-            </View>
           <Header />
 
           <View style={{ paddingHorizontal: 10, }}>
@@ -63,19 +34,10 @@ export default function Page() {
           }}>
             <Text style={{ fontSize: 16, lineHeight: 24, paddingBottom: 10, }}>Our commercial cleaning services meet the needs of the community and private businesses. We clean parks, warehouse, roadways, event halls, public restrooms, construction sites, and residential communities. We take pride in ensuring your community stays beautiful and refreshing.</Text>
 
-            <Text style={{ ...styles.h2, paddingBottom: 10, }}>Our Commercial Cleaning Services Include But Are Not Limited To:</Text>
-
-            {
-              services.map((service, index) => (
-                <View style={{ flexDirection: 'row' }} key={index}>
-                  <Text style={{ marginRight: 5, fontWeight: '700', fontSize: 18.72, textIndent: 50, }}>{'\u2022'}</Text>
-                  <Text style={{ fontSize: 18.72, textIndent: 5, lineHeight: 24, }}>{service}</Text>
-                </View>
-              ))
-            }
+           <Services/>
 
 
-            <CommercialServices
+            <Tasks
               task={tasks}
             />
           </View>

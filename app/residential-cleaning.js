@@ -1,17 +1,32 @@
-import { Platform, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
+import { Platform, ScrollView,SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Header from '../assets/components/Header'
+import ContactHeader from '../assets/components/ContactHeader'
 
 const residential = () => {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+    <StatusBar
+      backgroundColor={'white'} />
+    <ScrollView
+      showsVerticalScrollIndicator={false} stickyHeaderIndices={[0]} >
+       
+       <ContactHeader/>
         <Header/>
         <View style={{paddingHorizontal:10,}}>
         <Text style={styles.h1}>Residential Cleaning</Text>
 
         </View>
-      </View>
+        <View 
+        style={{
+          alignItems:'center',
+          justifyContent:'center',
+          height:400,
+          paddingHorizontal:10
+          }}>
+          <Text style={{...styles.h2,textAlign:'center',}}>This Page is Under Construction</Text>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   )
 }
