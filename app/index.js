@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, SafeAreaView, ScrollView, StatusBar, Platform } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, ScrollView, StatusBar,  } from "react-native";
 import Head from 'expo-router/head';
 import Header from "../assets/components/Header";
 import Tasks from "../assets/components/Tasks";
-import { tasks, services } from "../assets/data";
+import { tasks } from "../assets/data";
 import ContactHeader from "../assets/components/ContactHeader";
 import Services from "../assets/components/Services";
 

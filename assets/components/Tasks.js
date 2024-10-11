@@ -1,7 +1,6 @@
-import { ScrollView, StyleSheet, Modal, Text, View, Button, TouchableWithoutFeedback } from 'react-native';
+import { ScrollView, StyleSheet, Modal, Text, TouchableOpacity,View, TouchableWithoutFeedback } from 'react-native';
 import React, { useState } from 'react';
 import AntDesign from '@expo/vector-icons/AntDesign';
-import { TouchableOpacity } from 'react-native';
 
 const Tasks = ({ task }) => {
     const [modalVisible, setModalVisible] = useState(false);

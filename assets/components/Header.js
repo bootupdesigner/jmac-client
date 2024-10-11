@@ -1,25 +1,18 @@
-import { Image,  StyleSheet, View } from 'react-native'
+import { Image , TouchableOpacity } from 'react-native'
 import React from 'react'
 import Logo from '../images/online-logo.png';
+import { router } from 'expo-router';
 
 const Header = () => {
     return (
-            <View style={{ alignItems: 'center', }}>
+            <TouchableOpacity 
+            onPress={()=> router.push('/')}
+            activeOpacity={0.5}
+            style={{ alignItems: 'center', }}>
                 <Image alt='JMAC Cleaning Services logo' source={Logo}
                     style={{ width: 200, height: 113 }} />
-            </View>
+            </TouchableOpacity>
     )
 }
 
 export default Header
-
-const styles = StyleSheet.create({
-    h1: {
-        fontSize: 32,
-        fontWeight: "bold",
-    },
-    h2: {
-        fontSize: 24,
-        color: "#38434D",
-    },
-})
